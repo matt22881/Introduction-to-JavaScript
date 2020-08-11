@@ -1,5 +1,5 @@
-/************************************************************** Task 1: Warm-up! **************************************************************/
-//Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
+// /************************************************************** Task 1: Warm-up! **************************************************************/
+// //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
 const votingAge = 39;
 
@@ -9,7 +9,7 @@ if (votingAge > 18) {
 }
 
 
-//Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+// //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
 var x = 1;
 var y = 2;
@@ -18,27 +18,30 @@ if (x < y ) {
 console.log(x);
 
 
-//Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
+// //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
 
 console.log(Number('1999'));
 
 
-//Task d: Write a function to multiply a*b 
+// //Task d: Write a function to multiply a*b 
 
 const a = 2;
 const b = 6;
+console.log(a*b);
 
-function multiplyLetters(a, b){a * b};
-    console.log (multiplyLetters(3, 5));
-    // console.log( a * b);
+console.log(42);
 
+let multiply = (a,b) => console.log(a * b);
 
+// console.log(multiply(4,5));
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
+let realAge = 39;
+dogYears = realAge * 7;
+console.log('You are ' + dogYears + ' years old in Dog Years!');
 
 
 
@@ -60,6 +63,23 @@ function multiplyLetters(a, b){a * b};
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
+var age = 1;
+let weight = 15;
+age = age * 12
+if (age < 12 && age > 7) 
+    food = weight * .04;
+    else if (age < 12 && age > 4) 
+        food = weight * .05;
+    else if (age < 12 && age > 2) 
+        food = weight * .1;
+    else if  (weight <= 5) 
+        food = weight * .05;
+    else if (weight <= 10) 
+        food = weight * .04;
+    else if (weight <= 15) 
+        food = weight * .03;
+        else food = weight * .02;
+console.log('Feed that pup ' + food + 'pounds of food daily!')
 
 
 
