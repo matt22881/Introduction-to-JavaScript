@@ -5,14 +5,14 @@ const votingAge = 39;
 
 if (votingAge > 18) {
     console.log ('true');
-    console.log ('The question is WRONG!!  It should say if [votingAge > 17]...smh...maths iz hard i know');
+    console.log ('The question is WRONG!!  It should say "If (votingAge > 17){console.log("True")}"...smh...maths iz hard i know  XP');
 }
 
 
 // //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-var x = 1;
-var y = 2;
+let x = 1;
+let y = 2;
 if (x < y ) {
     x = x + y }
 console.log(x);
@@ -28,13 +28,14 @@ console.log(Number('1999'));
 
 const a = 2;
 const b = 6;
-console.log(a*b);
-
 console.log(42);
 
-let multiply = (a,b) => console.log(a * b);
 
-// console.log(multiply(4,5));
+// console.log(a*b);
+
+const multiply = (a, b) => {console.log(a * b)};
+
+console.log(multiply(4,5));
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
@@ -79,7 +80,7 @@ if (age < 12 && age > 7)
     else if (weight <= 15) 
         food = weight * .03;
         else food = weight * .02;
-console.log('Feed that pup ' + food + 'pounds of food daily!')
+console.log('Feed that pupper ' + food + 'pounds of food daily!')
 
 
 
@@ -91,21 +92,34 @@ console.log('Feed that pup ' + food + 'pounds of food daily!')
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+for (let i = 0; i < 50; i++); 
 
+
+let userChoice = 2     //----------------------------1-rock__2-paper__3-scissors------------------//
+function getRandom(min, max) {    
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * 3);
+    let botChoice = getRandom(1, 3);
+    return (console.log(botChoice));
 
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+const km = 100;
+let miles  = .621371 * km;
 
-
-
+console.log.toFixed(2)(miles + " miles!");
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 
 
+const feet = 100;
+let cent  = 30.48 * feet;
 
+console.log(Math.round(miles) + " Centimeters!")
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -134,15 +148,6 @@ console.log('Feed that pup ' + food + 'pounds of food daily!')
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
-
-
-
-
-
-/************************************************************** Stretch **************************************************************/
-//Take Rock, Paper, Sissors further
-//update your rock papers sissors code below to take a prompt from a user using the window object
-
 
 
 
