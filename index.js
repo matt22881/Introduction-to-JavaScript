@@ -28,14 +28,14 @@
 
 // const a = 2;
 // const b = 6;
+// console.log(a*b);
 // console.log(42);
-
-
-// // console.log(a*b);
-
-// const multiply = (a, b) => {console.log(a * b)};
-
+// const multiply = (a, b) => (a * b);
+// console.log(multiply(a,b));
 // console.log(multiply(4,5));
+
+
+
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
@@ -90,16 +90,71 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-// for (let i = 0; i < 50; i++); 
+
+                    //----------------------------1-rock__2-paper__3-scissors------------------//
 
 
-// let userChoice = 2     //----------------------------1-rock__2-paper__3-scissors------------------//
-// function getRandom(min, max) {    
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * 3);
-//     let botChoice = getRandom(1, 3);
-//     return (console.log(botChoice));
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max) +1);}
+function user() {
+    let userEntry = prompt('Choose Your Weapon.  Rock (r), Paper (p), or Scissors (s)');
+    const userLetter = toLowerCase(indexOf(userEntry(0)));
+    
+      let botChoice = getRandomInt(3);
+    if (userLetter !== 'r' && userLetter !== 'p' && userLetter !== 's' ) {
+        alert('That was not a valid choice.  Is this your first time?') return userEntry;
+    else if (userLetter === 'r') {userChoice = 1};
+    else if (userLetter === 'p') {userchoice = 2};
+    else if (userletter === 's') {userchoice = 3};
+    else if (userLetter = undefined) {
+        alert('You have to actually choose something, ideally one of the three choices') return userEntry;
+        else alert('I got confused, let\'s start over.') return userEntry;
+        }
+    }
+}   
+if userChoice === 1 and botChoice === 3  ||  userChoice === 2 and botChoice === 1  ||  userChoice === 3 and botChoice ===2 {
+    alert ('You Win!!  Congratulations.  *grumble grumble*  I wasn\'t ready yet though, next time I\'ll get you.)};
+
+if userChoice === 1 and botChoice === 2  ||  userchoice === 2 and botChoice === 3  ||  userChoice === 3 and botChoice ===1 {
+    alert ('HA HA HA Loser, I WIN!! At least I\'m a good sport about it and don\'t rub it in your Loser FACE!');
+
+    else {alert('Wait, what, a tie?  That can\'t be right, you made me pick the wrong one, you dirty cheater!)};
+}
+
+
+
+
+
+
+
+
+if(name=='Joe') //If the name is 'Joe'
+{
+	alert('Wow, cool - my name is Joe too!');
+}
+else if(name=='Fred') //If the name is 'Fred'
+{
+	alert('Fred is a pretty generic name...');
+}
+else if(name=='John') //If the name is 'John'
+{
+	alert('Alright, John?');
+}
+else if(name=='George') //If the name is 'George'
+{
+	alert('George is a pretty decent name.');
+}
+
+
+
+
+
+
+
+
+
+
 
 
 // /************************************************************** Task 5 **************************************************************/
@@ -125,18 +180,14 @@
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
-// let beer 
-for (beer = 0; beer<100; beer++){
-function drinkACold(beer) {
-    
-        if (beer !== 99) {console.log(`${[100 - beer]} bottles of beer on the wall, ${[100 - beer]}${' bottles of beeeer.  Ya take one down, pass it around, '[99 - beer]}`' bottles of beer on the wall.')}
-        else {console.log([ 100 - beer ]  ' last bottle of beer on the wall, ' + [ 100 - beer ] + ' final bottle of beeeeeeeeer.  Ya take it down, and pass it around, nooooooo mooore bottles of beer on thewall.') break;}
-        // console.log(drinkACold(beer))
-    }  
-}
-console.log(drinkACold(beer))
 
 
+// for (beer = 100; beer >= 1; beer--){
+//     function annoyingSong (beer) {
+//     if (beer !== 1) { return(beer + ' bottles of beer on the wall, ' + beer + ' bottles of beeeer. Ya take one down, pass it around, ' +  beer + ' bottles of beer on the wall.')}
+//         else {return( beer  + ' last bottle of beer on the wall, ' + beer + ' final bottle of beeeeeeeeer. Ya take it down, and pass it around, nooooooo mooore bottles of beer on thewall.')}}
+//     console.log(annoyingSong(beer))}
+ 
 
 
 // /************************************************************** Task 7 **************************************************************/
@@ -171,7 +222,8 @@ console.log(drinkACold(beer))
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
+var vowels = [];
+function findVowels (wordInQuestion) {
+    
 
-
-
-
+}
